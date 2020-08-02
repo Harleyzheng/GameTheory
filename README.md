@@ -31,7 +31,7 @@ Utility function: ui.
 
 #### Nash Equilibrium Intro - Keynes Beauty Contest
 
-**Nash Equilibrium**  is a set of actions, one for each of the agents, such that each action is the **Best Response** against the equilibrium strategies of the other players. (such that no player would benefit by changing his own strategy (only **one** player changes at a time!), provided the other players don’t change their strategies.)
+**Pure Strategy Nash Equilibrium**  is a set of actions, one for each of the agents, such that each action is the **Best Response** against the equilibrium strategies of the other players. (such that no player would benefit by changing his own strategy (only **one** player changes at a time!), provided the other players don’t change their strategies.)
 
 **Best response**.  an action ai is a best response, if for any other action, ai's utility is **greater** than utility of any other actions 
 
@@ -84,3 +84,36 @@ So a profile of mixed strategies is an equilibrium if no player has some strateg
 
 **Use backward induction**
 
+
+
+## Mixed Strategies and Nash Equilibrium
+
+Strategy S for agent i is any probability distribution over the actions Ai.
+
+- **Pure Strategy**: only one action is played with positive probability
+- **Mixed Strategy**: more than one action is played with positive probability
+
+**expected utility** of a mixed strategy is a weighted sum of all utilities times probability (Product of probabililties of each player playing their actions). 
+
+**Best response**. A strategy s is a BR iff its utility is greater than utility of every other s'.
+
+**(Mixed Strategy) Nash Equilibrium** (this is not Pure Strategy Nash Equilibrium) s = <s1,...sn> is a Nash equilibrium iff every other player is playing their best response
+
+**Nash's Theorem**. Every **finite** (finite number of players, actions) game has a (Mixed Strategy) Nash equilibrium.
+
+**Mixed Nash equilibrium** Compute the probability of each action so that it makes the other people indifferent about picking the actions. 
+
+**Meaning of mixed strategies.** 
+
+- Randomize to confuse your opponent (to be balanced)
+- Randomize when uncertain about the other's action
+- A concise description of what might happen in repeated play: count of pure strategies in the limit
+- Describe population dynamics. 
+
+ Computing Mixed Nash equilibrium is between P and NP. 
+
+### Summary
+
+**Pure Strategy Nash Equilibrium**  is a set of actions, one for each of the agents, such that each action is the **Best Response** against the equilibrium strategies of the other players. (such that no player would benefit by changing his own strategy (only **one** player changes at a time!), provided the other players don’t change their strategies.)
+
+**Mixed Nash equilibrium** Compute the probability of each action so that it makes the other people indifferent about picking the actions. 
